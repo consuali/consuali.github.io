@@ -1,0 +1,16 @@
+.particles-js-canvas-el {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+    #particles-js{
+        background-color: black;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    canvas{
+        display: block;
+        vertical-align: bottom;
+    }

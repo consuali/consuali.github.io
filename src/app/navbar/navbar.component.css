@@ -1,0 +1,90 @@
+ion-header {
+    background-color: transparent;
+  }
+  
+  ion-toolbar {
+    --background: transparent;
+    
+  }
+ion-title{
+  color: #e9c46a;
+  font-family : 'Pixelify-regular' ; 
+  font-size: xx-large;
+}
+
+/* Stile di base del pulsante */
+.pulsating-button {
+  color: #e76f51;
+  font-family: 'openSans';
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  font-size: 16px;
+  
+}
+ion-grid{
+  left: 80;
+}
+/* Definizione dell'animazione */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Applica l'animazione al pulsante */
+.pulsating-button:hover {
+  animation: pulse 1s infinite;
+  box-shadow: 1px 3px 5px #2a9d8f;
+}
+
+
+
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  
+  list-style: none;
+  margin: 0; 
+  background: #2a9d8f;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.navigation a:hover {
+  background: #1565C0;
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}

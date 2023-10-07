@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face { 
+    font-family : 'Pixelify' ; 
+    src : url( 'assets/fonts/PixelifySans-Bold.ttf' ) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family :'Pixelify-regular' ; 
+    src : url( 'assets/fonts/PixelifySans-Regular.ttf' ) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+@font-face {
+    font-family :'openSans' ; 
+    src : url( 'assets/fonts/openSans/openSans.ttf' ) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+@font-face {
+    font-family :'comfortaa' ; 
+    src : url( 'assets/fonts/Comfortaa-Regular.ttf' ) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+

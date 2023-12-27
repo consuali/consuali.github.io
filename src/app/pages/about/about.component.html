@@ -1,0 +1,91 @@
+<div class="container">
+  <div class="row">
+    <div class="col s12 animate__animated animate__bounceInLeft">
+      <h1 class="orange-text text-lighten-3"><b>About me</b></h1>
+    </div>
+  </div>
+  <ul class="collapsible animate__animated animate__zoomIn animate__faster" data-collapsible="expandable">
+    <li (click)="onClickToggle($event)">
+      <div
+        class="flow-text collapsible-header valign-wrapper  teal-text text-lighten-2 yellow lighten-3 active">
+        <i class="fa fa-user fa-lg  teal-text text-lighten-2" aria-hidden="true"></i>Who am I?
+      </div>
+      <div class="collapsible-body row  teal-text text-lighten-3 yellow lighten-3 ">
+        <div class="col s6 m4 l3">
+          <img src="assets/cf_profile.jpg" alt="consuelo fadda profile" class="circle responsive-img profile-img"
+            style="background-color: white" />
+        </div>
+        <div class="col s12 m8 l9 left-align-text  teal-text text-lighten-2">
+          <span class="flow-text description-text">Hello, I'm Consuelo, a passionate web developer with a preference for frontend development and a solid background in creating web applications based on Angular and Ionic. My mission is to take ideas to the next level by bringing engaging and intuitive user experiences to life.
+
+            I excel in using Angular and Ionic, frameworks that I love for their versatility and ability to create modern and dynamic user interfaces. My proficiency in working with Node.js and TypeScript allows me to develop robust and high-performing APIs, crafting comprehensive and integrated web solutions.
+            
+         <br /><br />            I am an organized individual with a creative touch. I believe that a well-organized structure is the key to tackling complex projects, while creativity is what adds that special touch.
+            <br /><br />   My work philosophy is rooted in precision and punctuality. I believe that attention to detail is crucial for creating high-quality products, and I commit to always meeting deadlines to ensure customer satisfaction.
+ 
+            
+            I am excited about every new challenge and consistently work to stay updated on the latest industry trends.</span>
+        </div>
+      </div>
+    </li>
+    <li (click)="onClickToggle($event)">
+      <div class="flow-text collapsible-header valign-wrapper  teal-text text-lighten-2 yellow lighten-3 ">
+        <i class="fa fa-graduation-cap fa-lg   teal-text text-lighten-2" aria-hidden="true"></i>Education background
+      </div>
+      <div class="collapsible-body   teal-text text-lighten-2 yellow lighten-3 ">
+        <table class="flow-text">
+          <tbody>
+            <tr *ngFor="let e of education">
+              <td>
+                <a class=" teal-text text-lighten-3 yellow lighten-3 " href="{{ e.href }}" target="_blank">{{
+                  e.field_1 }}</a>
+              </td>
+              <td class="right-align">{{ e.field_3 }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+    <li (click)="onClickToggle($event)">
+      <div class="flow-text collapsible-header valign-wrapper  teal-text text-lighten-2 yellow lighten-3">
+        <i class="fa fa-briefcase fa-lg teal-text text-lighten-2" aria-hidden="true"></i>Work experience
+      </div>
+      <div class="collapsible-body teal-text text-lighten-2 yellow lighten-3 ">
+        <table class="flow-text">
+          <tbody>
+            <tr *ngFor="let work of works">
+              <td>
+                <a class=" teal-text text-lighten-2 yellow lighten-3 " href="{{ work.href }}" target="_blank">{{
+                  work.field_1 }} @ {{ work.field_2 }}</a>
+              </td>
+              <td class="right-align">{{ work.field_3 }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+    <li (click)="onClickToggle($event)">
+      <div class="flow-text collapsible-header valign-wrapper  teal-text text-lighten-2 yellow lighten-3">
+        <i class="material-icons   teal-text text-lighten-2">language</i>Spoken languages
+      </div>
+      <div class="collapsible-body  teal-text text-lighten-3 yellow lighten-3 ">
+        <table class="flow-text">
+          <tbody>
+            <tr *ngFor="let lang of languages">
+              <td>{{ lang.field_1 }}</td>
+              <td>{{ lang.field_2 }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+  </ul>
+  <div class="row animate__animated animate__fadeInUp animate__faster animate__delay-1s">
+    <div class="card-link col s12 m4 l3 btn-large">
+      <a id="downloadButton" class=" teal-text text-lighten-3 yellow lighten-3 valign-wrapper center"
+        href="https://www.dropbox.com/scl/fi/84qe2hh5ih6i6ufahokwy/ConsueloFaddaCV.pdf?rlkey=y9cxw5c2wccbro45tt4mmv6nu&dl=0" target="_blank"
+        download>View C.V.
+      </a>
+    </div>
+  </div>
+</div>

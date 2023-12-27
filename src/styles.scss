@@ -1,0 +1,48 @@
+:root {
+  --color-primary: #f4a261;
+  --color-secondary: #2a9d8f;
+  --color-tertiary: #e9c46a;
+  --color-pure-white: #e9c46a;
+  --color-transparent: transparent;
+}
+html {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: var(--color-secondary);
+}
+body {
+  font-family: 'Rubik', sans-serif;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.card-panel,
+.card,
+.collapsible {
+  box-shadow: none !important;
+}
+.indicator {
+  border-bottom: 5px solid var(--color-primary);
+}
+
+#particles-js {
+  background-color: #264653;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}

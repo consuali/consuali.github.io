@@ -1,0 +1,7 @@
+<div class="game-board">
+    <div [ngStyle]="{'display': countMatched < 8 ? 'block' : 'none'}" [ngClass]="card.flipped ? 'flipped' : 'card'" *ngFor="let card of cards; index as i" (click)="flipCard(i)">
+      <div [ngClass]="card.flipped ? 'front-flipped' : 'front'" *ngIf="card.flipped && !card.matched" [ngStyle]="{'background-color': card.color}"></div>
+      <div class="back" *ngIf="!card.flipped"></div>
+    </div>
+    <div *ngIf="countMatched == 8">GAME OVER!</div>
+  </div>

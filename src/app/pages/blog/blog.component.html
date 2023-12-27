@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row">
+    <div class="col s12 animate__animated animate__bounceInLeft">
+      <div class="">
+        <h1 class="orange-text text-lighten-3"><b>Blog</b></h1>
+      </div>
+    </div>
+  </div>
+<!-- <div class="row">
+    <form (ngSubmit)="addPost()" class="col s12">
+      <div class="input-field">
+        <input id="title" [(ngModel)]="currentPost.title" name="title" type="text" class="validate" required>
+        <label for="title">Titolo</label>
+      </div>
+  
+      <div class="input-field">
+        <textarea id="content" [(ngModel)]="currentPost.content" name="content" class="materialize-textarea" required></textarea>
+        <label for="content">Contenuto</label>
+      </div>
+  
+      <button class="waves-effect waves-light btn" type="submit">Aggiungi Post</button>
+    </form>
+  </div> -->
+  
+  <!-- <div *ngFor="let post of posts; let i = index" class="container">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.content }}</p>
+    <button class="waves-effect waves-light btn blue" >Modifica</button>
+    <button class="waves-effect waves-light btn red" (click)="deletePost(i)">Elimina</button>
+  </div> -->
+
+  <div class="row">
+    <div class="col s12 m4 l2"></div>
+    <div class="col s12 m4 l8"  *ngFor="let post of posts; let i = index" >
+      
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title  teal-text lighten-2">{{ post.title }}</span>
+            {{ post.content }}
+          </div>
+         <div class="card-action">
+        <!-- Icone per cancellare o modificare -->
+        <button class="delete-post waves-effect waves-light btn teal" (click)="editPost(i)"><i class="material-icons orange-text">delete</i></button>
+        <button  class="edit-post waves-effect waves-light btn teal" (click)="deletePost(i)"><i class="material-icons orange-text" >edit</i></button>
+      </div>
+    </div>
+      
+    </div>
+    <div class="col s12 m4 l2"></div>
+  </div>
+</div>

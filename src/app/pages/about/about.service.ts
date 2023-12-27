@@ -7,27 +7,27 @@ export class AboutService {
     new InfoField('Fullstack Developer', 'Lilitech', 'May. 2021 - Present', 'https://www.lilitech.com'),
     new InfoField('Junior Fullstack Developer', 'Synthesis3', 'July. 2021 - May. 2021', 'https://www.synthesis3.com'),
     new InfoField('Junior Fullstack Developer', 'Aimage', 'Jan - July. 2021', 'https://www.aimage.it/'),
- 
+
   ];
 
   private education: InfoField[] = [
     new InfoField(
-      'Masters in Advanced Videogame Development',
-      'Campus La Salle',
-      'Oct. 2018 - July 2019',
-      'https://www.salleurl.edu/ca/estudis/master-en-desenvolupament-avancat-de-videojocs'
+      'Certificate in Software Development with Internship',
+      'Engim Torino',
+      '2019 - 2020',
+      'http://www.engimtorino.net/tecnico-di-sviluppo-software/'
     ),
     new InfoField(
-      'Multimedia Engineering Degree',
-      'Campus La Salle',
-      'Sept. 2013 - June 2018',
-      'https://www.salleurl.edu/ca/estudis/grau-en-enginyeria-multimedia-mencio-en-videojocs'
+      'Certificate in Graphic Operator and Web Designer',
+      'FORIt Group',
+      '260 h',
+      ''
     ),
     new InfoField(
-      'Sound Technician',
-      'EMAV',
-      'Sept. 2011 - June 2013',
-      'https://www.emav.com/oferta-educativa/cicles-formatius-de-grau-superior/so/'
+      'Diploma in Agricultural Sciences',
+      'Cecchi Technical Agricultural Institute',
+      'Sept. 2001 - June 2006',
+      'https://iiscecchi.edu.it/piano-studi-ita/'
     )
   ];
 
